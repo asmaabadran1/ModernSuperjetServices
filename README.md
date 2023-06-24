@@ -10,7 +10,8 @@ Demo: https://modern-superjet.netlify.app/
 QR Code Ticketing: The project features a powerful QR code ticketing mechanism that ensures efficient and secure ticketing for customers. The QR code is scanned upon boarding the bus, ensuring quick and convenient access for passengers.
 
 Bus Door System: The project includes important safety measures to protect passengers during the COVID-19 pandemic. The system is designed to ensure that the bus door only opens when all safety conditions are met. These conditions include the passenger wearing a mask, scanning the ticket code, and the system recognizing the passenger's face from the attached data.
-
+<br>
+Demo: https://drive.google.com/drive/my-drive
 The Driver System: A sophisticated tool that empowers drivers to optimize their routes for maximum efficiency and timeliness. By utilizing the starting and stopping points inputted into the system, this tool provides drivers with the most direct and efficient path to their destination, taking into account factors such as distance and time constraints. This comprehensive solution enhances the overall experience for both customers and drivers, allowing for more streamlined and effective transportation services.
 
 # Overall:
