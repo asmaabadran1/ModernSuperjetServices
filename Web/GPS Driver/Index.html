@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Distances btn two cities App</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/ab2155e76b.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="App.css" rel="stylesheet" />
+</head>
+<body>
+  
+
+    <div class="jumbotron">
+        <div class="container-fluid">
+            <h1 style="padding: 30px;">Find The Distance Between Two Places</h1>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="from" class="col-xs-4 control-label" style='font-size:25px;'><i class="far fa-dot-circle" style='font-size:25px;'></i></label>
+                    <div class="col-xs-4">
+<!--                        <input type="text" id="from" placeholder="Origin" class="form-control">-->
+                        <select name="from" id="from" style="font-size:18px; padding:7px; margin-left: 10px; margin-right: 60px;">
+                            <option value="Tahrir">Tahrir</option>
+                            <option value="Nasr city">Nasr city</option>
+                            <option value="Tagamou elkhames">Tagamou elkhames</option>
+                            <option value="Almazah, Heliopolis, Cairo Governorate 4461221">Almaza</option>
+                            <option value="Giza">Giza</option>
+                            <option value="Moharam bek">Moharam bek</option>
+                            <option value="Abis, Moharam Bek, Alexandria Governorate">Abees</option>
+                            <option value="Ramsis, Luxor City, Luxor, Luxor Governorate">Ramses</option>
+                            <option value="Porto elsokhna">Porto elsokhna</option>
+                            <option value="Porto south beach">Porto south beach</option>
+                            <option value="Grand ocean">Grand ocean</option>
+                            <option value="Cancun Sokhna Resort & Villas, 102 Km, Ain El Sokhna - Zafarana Rd, 43111">Cancoun</option>
+                            <option value="Sidi Abd El-Raheem El-Qenawy, Qism Qena, Qena, Qena Governorate">Sidi abdelraheem</option>
+                            <option value="Al Shader Al Kebli, Abu Tig, Assiut Governorate">Elshader</option>
+                            <option value="Tanta, Gharbia Governorate">Tanta</option>
+                            <option value="El-Mahalla El-Kubra, Al Mahalah Al Kubra (Part 2), El Mahalla El Kubra, Gharbia Governorate">Mahalla</option>
+                            <option value="Safaga">Safaga</option>
+                            <option value="Al Rewaysat Rd, Sharm Al Shiekh, South Sinai Governorate">Royssat</option>
+                            <option value="Dahab">Dahab</option>
+                            <option value="Hurghada">Hurghada</option>
+                            <option value="Sahl heshesh">Sahl heshesh</option>
+                            <option value="Elgouna">Elgouna</option>
+                            <option value="Marsa alam">Marsa alam</option>
+                            <option value="Hawaii Caesar Palace Hotel & Aqua Park, Hurghada, Red Sea Governorate 1982123">The cesar</option>
+                            <option value="Makadi">Makadi</option>
+                            <option value="Soma bay">Soma bay</option>
+                            <option value="Taba">Taba</option>
+                            <option value="Nuweiba">Nuweiba</option>
+                            <option value="Marsa matrouh">Marsa matrouh</option>
+                            <option value="Minya">Minya</option>
+                            <option value="Mallawi">Mallawi</option>
+                            <option value="port said">Port said</option>
+                      </select>
+                    </div>
+               </div>
+               <div class="form-group">
+                
+                    <label for="to" class="col-xs-4 control-label" style="margin-left: 60px;"><i class="fas fa-map-marker-alt" style="font-size: 25px;"></i></label>
+                    <div class="col-xs-4">
+<!--                        <input type="text" id="to" placeholder="Destination" class="form-control">-->
+                        <select name="to" id="to" style="font-size:18px; padding:7px; margin-left: 10px;">
+                            <option value="Tahrir">Tahrir</option>
+                            <option value="Nasr city">Nasr city</option>
+                            <option value="Tagamou elkhames">Tagamou elkhames</option>
+                            <option value="Almazah, Heliopolis, Cairo Governorate 4461221">Almaza</option>
+                            <option value="Giza">Giza</option>
+                            <option value="Moharam bek">Moharam bek</option>
+                            <option value="Abis, Moharam Bek, Alexandria Governorate">Abees</option>
+                            <option value="Ramsis, Luxor City, Luxor, Luxor Governorate">Ramses</option>
+                            <option value="Porto elsokhna">Porto elsokhna</option>
+                            <option value="Porto south beach">Porto south beach</option>
+                            <option value="Grand ocean">Grand ocean</option>
+                            <option value="Cancun Sokhna Resort & Villas, 102 Km, Ain El Sokhna - Zafarana Rd, 43111">Cancoun</option>
+                            <option value="Sidi Abd El-Raheem El-Qenawy, Qism Qena, Qena, Qena Governorate">Sidi abdelraheem</option>
+                            <option value="Al Shader Al Kebli, Abu Tig, Assiut Governorate">Elshader</option>
+                            <option value="Tanta, Gharbia Governorate">Tanta</option>
+                            <option value="El-Mahalla El-Kubra, Al Mahalah Al Kubra (Part 2), El Mahalla El Kubra, Gharbia Governorate">Mahalla</option>
+                            <option value="Safaga">Safaga</option>
+                            <option value="Al Rewaysat Rd, Sharm Al Shiekh, South Sinai Governorate">Royssat</option>
+                            <option value="Dahab">Dahab</option>
+                            <option value="Hurghada">Hurghada</option>
+                            <option value="Sahl heshesh">Sahl heshesh</option>
+                            <option value="Elgouna">Elgouna</option>
+                            <option value="Marsa alam">Marsa alam</option>
+                            <option value="Hawaii Caesar Palace Hotel & Aqua Park, Hurghada, Red Sea Governorate 1982123">The cesar</option>
+                            <option value="Makadi">Makadi</option>
+                            <option value="Soma bay">Soma bay</option>
+                            <option value="Taba">Taba</option>
+                            <option value="Nuweiba">Nuweiba</option>
+                            <option value="Marsa matrouh">Marsa matrouh</option>
+                            <option value="Minya">Minya</option>
+                            <option value="Mallawi">Mallawi</option>
+                            <option value="port said">Port said</option>
+                      </select>
+                    </div>
+                  
+                 </div>
+                 
+            </form>
+            <div class="col-xs-offset-1 col-xs-1" style='margin-left:50px;'>
+                <button class="btn btn-info btn-lg "  onclick="calcRoute();"><i class="fas fa-map-signs"></i></button>
+            </div>
+        
+        </div>
+        <div class="container-fluid">
+            <div id="googleMap">
+
+            </div>
+            <div id="output">
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAw20Zw2-q1xYl1Q-tzXeegoQ_aZe3YL-w&libraries=places"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <script src="Main (2).js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="tick.css">
+        <title>Superjet Services</title>
+        
+    </head>
+
+
+    <body>
+        <div class="fixprog">
+            <div class="myprogress">
+                <div class="mybar">
+    
+                </div>
+            </div>
+            <div class="bartitle">
+                <div class="barone"><p>1</p></div>
+                <div class="bartwo"><p>2</p></div>
+                <div class="barthree"><p>3</p></div>
+                <div class="barfour"><p>4</p><p class="fstep">Final Step!</p></div>
+            </div>
+        </div>
+    <div class="passenger">
+        <h1>PASSENGER DETAILS</h1>
+        <h2>TICKET 1</h2>
+    <div class="det">
+        <p>NAME</p><p id="passname" ></p>
+    </div>
+    <div class="det">
+
+        <p>EMAIL</p><p id="passemail"></p>
+    </div>
+    <div class="det">
+        <p>PHONE</p><p id="passphone"></p>
+    </div>
+    <div class="det">
+        <p>SEAT NUMBER</p><p id="passseat"></p>
+    </div>
+        <div id="passpic"></div>
+
+        
+        <hr>
+        <div>
+            <h1>TRIP DETAILS</h1>
+            <div class="headbody">
+
+
+                <div class="selectfrom">
+   
+                   <img src="../select_ticket/place1.png" />
+                   <p class="fromloc"> From </p>
+                   <p id="passfromlocation"></p>
+             </div>
+   
+   
+   
+                <div class="selectto">
+   
+                   <img src="../select_ticket/place.png" />
+   
+                   <p class="toloc"> To </p>
+                   <p id="passtolocation"></p>
+              </div>
+   
+   
+   
+               <div class="selectdate">
+   
+                   <img src="../select_ticket/calendar.png" />
+                   <p class="pdateone"> Departure Date</p> 
+                   <p id="passdateone" ></p>
+   
+               </div>
+               <div class="selectdate">
+   
+                <img src="../select_ticket/calendar1.png" />
+                <p class="pdateone"> Return Date</p> 
+                <p id="passdatetwo" ></p>
+
+            </div>
+
+               </div>
+               <hr style="margin-top: 60px;">
+
+        </div>
+
+    </div>
+    <div>
+        <h1>MENU ORDER</h1>
+        <div class="menustyle">
+            <p>Coffe : <spam id="numcoffe"> </spam></p>
+            <p>Tea : <spam id="numtea"> </spam></p>
+            <p>Water : <spam id="numwater"> </spam></p>
+            <p>Juice : <spam id="numjuice"> </spam></p>
+            <p>toast : <spam id="numtoast"> </spam></p>
+            <p>Crusoe : <spam id="numcrusoe"> </spam></p>
+            <p>sandwich : <spam id="numsandwich"> </spam></p>
+        </div>
+
+
+
+        <hr>
+    </div>
+    <div>
+        <h1>TICKET</h1>
+        <div id="ticketbody" class="ticketbody">
+        <div>
+            <p>NAME</p>
+            <p id="passnamee"></p>
+            <br>
+            <p>SEAT</p>
+            <p id="passseatnum"></p>
+            <br>
+            <p>DATE</p>
+            <p id="passdateonee" ></p>
+            
+        </div>
+        <div>
+            <p>FROM</p>
+            <p id="passfromlocationn"></p>
+            <br>
+            <p>Start Time</p><p id="passstime"></p>
+            <br>
+            <p>PICK UP</p>
+            <p id="passpick"></p>
+
+        </div>
+        <div>
+            <p>TO</p>
+            <p id="passtolocationn"></p>
+            <br>
+            <p>End Time</p><p id="passltime"></p>
+            <br>
+            <p>DROP OFF</p>
+            <p id="passdrop"></p>
+        </div>
+        <div id="qr">
+
+        </div>
+
+
+        </div>
+        <div class="buttons">
+            <a id="download" href="" download="qr.png"><button>Download</button></a>
+            <br>
+            <button>Share Ticket</button>
+        </div>
+        <a href="../index.html" style="color: #3DC3AC;">GO BACK</a>
+
+    </div>
+    
+    <!-- <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script> -->
+    <script src="https://fastly.jsdelivr.net/gh/davidshimjs/qrcodejs@gh-pages/qrcode.min.js"></script>
+    <script src="tick.js"></script>
+    </body>
+
+</html>

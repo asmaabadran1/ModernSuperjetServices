@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="seat.css">
+        <title>Superjet Services</title>
+        
+    </head>
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+     <body>
+        <div class="fixedbg">
+          <div class="myprogress">
+            <div class="mybar">
+
+            </div>
+        </div>
+        <div class="bartitle">
+            <div class="barone"><p>1</p></div>
+            <div class="bartwo"><p>2</p></div>
+            <div class="barthree"><p>3</p></div>
+            <div class="barfour"><p>4</p></div>
+        </div>
+        </div>
+
+         <div class="headbody">
+
+
+             <div class="selectfrom">
+
+                <img src="../select_ticket/place1.png" />
+                <p class="fromloc"> From </p>
+                <p id="passfromlocation"></p>
+          </div>
+
+
+
+             <div class="selectto">
+
+                <img src="../select_ticket/place.png" />
+
+                <p class="toloc"> To </p>
+                <p id="passtolocation"></p>
+           </div>
+
+
+
+            <div class="selectdate">
+
+                <img src="../select_ticket/calendar.png" />
+                <p class="pdateone"> Departure Date</p> 
+                <p id="passdateone" ></p>
+
+            </div>
+
+
+            <div class="selectreturn">
+                <p id="passdatetwo"></p>
+            <div id="hidetitle">
+                <img src="../select_ticket/calendar1.png" />
+                <p id="titlereturn">Return Date</p>
+            </div>
+                <input type="button" value="Return Date?" id="returndate" min="2022-03-14" onclick="changedate()">
+           </div>
+
+
+
+             <div class="editebut">
+
+                <input type="button" id="pushedite" onclick="editebutton()" value="EDIT SEARCH" >
+
+            </div>
+
+            </div>
+
+
+     <!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+        
+         <div class="ticketscontainer" id="myrow">
+                    
+          <div class="seatscontainer">
+            
+            <div class="row1">
+              <label class="containerseat">
+                <input type="checkbox" value="A1" >
+                <span class="checkmark"></span>
+              </label>              
+              <label class="containerseat" >
+                <input type="checkbox" value="A2" >
+                <span class="checkmark"></span>
+              </label>
+              <label class="containerseat" >
+                <input type="checkbox" value="A3" >
+                <span class="checkmark"></span>
+              </label>
+              <label class="containerseat" >
+                <input type="checkbox" value="A4">
+                <span class="checkmark"></span>
+              </label>
+              <label class="containerseat" >
+                <input type="checkbox" value="A5">
+                <span class="checkmark"></span>
+              </label>              
+              <label class="containerseat" >
+                <input type="checkbox" value="A6">
+                <span class="checkmark"></span>
+              </label>              
+              <label class="containerseat" >
+                <input type="checkbox" value="A7">
+                <span class="checkmark"></span>
+              </label>              
+              <label class="containerseat" >
+                <input type="checkbox" value="A8">
+                <span class="checkmark"></span>
+              </label>
+              <label class="containerseat" >
+                <input type="checkbox" value="A9">
+                <span class="checkmark"></span>
+              </label>              
+              <label class="containerseat" >
+                <input type="checkbox" value="A10" disabled>
+                <span class="checkmark"></span>
+              </label>
+              <label class="containerseat" >
+                <input type="checkbox" value="A11" disabled>
+                <span class="checkmark"></span>
+              </label>           
+              
+              <img id="desdriv" src="https://img.icons8.com/ios-filled/60/3DC3AC/driver.png"/>
+
+
+            </div>
+      
+            <div class="row2">
+              <label class="containerseat" >
+                <input type="checkbox" value="B1">
+                <span class="checkmark "></span>
+              </label>              
+              <label class="containerseat" >
+                <input type="checkbox" value="B2">
+                <span class="checkmark"></span>
+              </label>
+              <label class="containerseat" >
+                <input type="checkbox" value="B3">
+                <span class="checkmark"></span>
+              </label>
+              <label class="containerseat" >
+                <input type="checkbox" value="B4">
+                <span class="checkmark"></span>
+              </label>
+              <label class="containerseat" >
+                <input type="checkbox" value="B5">
+                <span class="checkmark"></span>
+              </label>              
+              <label class="containerseat" >
+                <input type="checkbox" value="B6">
+                <span class="checkmark"></span>
+              </label>              
+              <label class="containerseat" >
+                <input type="checkbox" value="B7">
+                <span class="checkmark"></span>
+              </label>              
+              <label class="containerseat" >
+                <input type="checkbox" value="B8">
+                <span class="checkmark"></span>
+              </label>
+              <label class="containerseat" >
+                <input type="checkbox" value="B9">
+                <span class="checkmark"></span>
+              </label>              
+              <label class="containerseat" >
+                <input type="checkbox" value="B10" disabled>
+                <span class="checkmark"></span>
+              </label>
+              <label class="containerseat" >
+                <input type="checkbox" value="B11" disabled>
+                <span class="checkmark"></span>
+              </label>           
+              <label class="containerseat" >
+                <input type="checkbox" value="B12">
+                <span class="checkmark"></span>
+              </label> 
+            </div>
+
+      <br>
+      <br>
+      <br>
+
+            <div class="row3">
+              <label class="containerseat" >
+                <input type="checkbox" id="c1" value="C1">
+                <span class="checkmark"></span>
+              </label>              
+              <label class="containerseat" >
+                <input type="checkbox" value="C2">
+                <span class="checkmark"></span>
+              </label>
+              <label class="containerseat" >
+                <input type="checkbox" value="C3">
+                <span class="checkmark"></span>
+              </label>
+              <label class="containerseat" >
+                <input type="checkbox" value="C4">
+                <span class="checkmark"></span>
+              </label>
+              <label class="containerseat" >
+                <input type="checkbox" value="C5">
+                <span class="checkmark"></span>
+              </label>              
+              <label class="containerseat" >
+                <input type="checkbox" value="C6">
+                <span class="checkmark"></span>
+              </label>              
+              <label class="containerseat" >
+                <input type="checkbox" value="C7">
+                <span class="checkmark"></span>
+              </label>              
+              <label class="containerseat" >
+                <input type="checkbox" value="C8">
+                <span class="checkmark"></span>
+              </label>
+              <label class="containerseat" >
+                <input type="checkbox" value="C9">
+                <span class="checkmark"></span>
+              </label>              
+              <label class="containerseat" >
+                <input type="checkbox" value="C10" disabled>
+                <span class="checkmark"></span>
+              </label>
+              <label class="containerseat" >
+                <input type="checkbox" value="C11">
+                <span class="checkmark"></span>
+              </label>           
+              <label class="containerseat" >
+                <input type="checkbox" value="C12">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="row4">
+              <label class="containerseat" >
+                <input type="checkbox" value="D1">
+                <span class="checkmark"></span>
+              </label>              
+              <label class="containerseat" >
+                <input type="checkbox" value="D2">
+                <span class="checkmark"></span>
+              </label>
+              <label class="containerseat" >
+                <input type="checkbox" value="D3">
+                <span class="checkmark"></span>
+              </label>
+              <label class="containerseat" >
+                <input type="checkbox" value="D4">
+                <span class="checkmark"></span>
+              </label>
+              <label class="containerseat" >
+                <input type="checkbox" value="D5">
+                <span class="checkmark"></span>
+              </label>              
+              <label class="containerseat" >
+                <input type="checkbox" value="D6">
+                <span class="checkmark"></span>
+              </label>              
+              <label class="containerseat" >
+                <input type="checkbox" value="D7">
+                <span class="checkmark"></span>
+              </label>              
+              <label class="containerseat" >
+                <input type="checkbox" value="D8">
+                <span class="checkmark"></span>
+              </label>
+              <label class="containerseat" >
+                <input type="checkbox" value="D9">
+                <span class="checkmark"></span>
+              </label>              
+              <label class="containerseat" >
+                <input type="checkbox" value="D10" disabled>
+                <span class="checkmark"></span>
+              </label>
+              <label class="containerseat" >
+                <input type="checkbox" value="D11">
+                <span class="checkmark"></span>
+              </label>           
+              <label class="containerseat" >
+                <input type="checkbox" value="D12">
+                <span class="checkmark"></span>
+              </label>
+              <img id="desdoor" src="https://img.icons8.com/material-sharp/60/FBBB0D/door-opened.png"/>
+
+
+            </div>
+          </div>
+   
+        <!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+            
+        
+        
+     <!---------------------------------------------------------------------------------------------------------------------------------------------------------->
+     <ul class="showcase">
+      <li>
+        <div class="solidout"><img src="https://img.icons8.com/ios-filled/40/CCCCCC/car-seat.png"></div>
+        <small>Solid Out</small>
+      </li>
+
+      <li>
+        <div class="selected"><img src="https://img.icons8.com/ios-filled/40/3DC3AC/car-seat.png"></div>
+        <small>Selected</small>
+      </li>
+
+      <li>
+        <div class="available"><img src="https://img.icons8.com/ios/40/3DC3AC/car-seat.png"></div>
+        <small>Available</small>
+      </li>
+    </ul>
+         </div>
+     <!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+         <div class="postinfo">
+
+            <div class="posttitle">
+            <img src="../select_ticket/ticket.png" />
+            <h6> SELECT A TRIP </h6>
+            </div>
+
+            <div class="user data1">
+
+                <span class="from"> From </span>
+                <p id="passfrolocation" ></p>
+
+            </div>
+
+
+            <div class="user data2">
+
+                <span class="to"> To </span>
+                <p id="passtlocation"></p>
+
+            </div>
+
+            <div class="user data3">
+
+                <span class="date"> Date </span>
+                <p id="passdteone"></p>
+
+            </div>
+              
+
+         <hr width="200">
+
+                <h6 class="headtotal"> TOTAL <p id="passtotal"></p></h6>
+                <div class="btn6">
+
+                    <button id="passticvalue"><a id="samepge" style="color: #fff; text-decoration: none;"> GET TICKET </a></button>
+                    <br><br>
+                    <a id="addtototal" style="margin-left: 12px; color: #3DC3AC; text-decoration: underline; cursor: pointer;">Click Here To Add Menu Check</a>
+
+                </div>
+
+        </div>
+        <div class="text9">
+
+            <div class="menu">
+
+            <p> Menu's Service </p>
+
+           </div>
+
+
+           <div class="coffe">
+
+             <img src="jpg.18.png" height="180" width="200">
+
+               <div class="btn7">
+
+                <button id="subcoffe" onclick="deccoffe();" value="25">-</button>
+                <input type="text" id="inputcoffe" readonly="" value="0">
+                <button id="addcoffe" onclick="inccoffe();">+</button>
+                <input id="pricecoffe" value="25">EGP
+
+                </div>
+
+           </div>
+
+         <!-------------------------------------------------------------------------------------------------------------------------------->
+
+           <div class="tea">
+
+             <img src="jpg.19.png"  height="150" width="200">
+
+                <div class="btn8">
+
+                  <button id="subtea" onclick="dectea();" value="20">-</button>
+                  <input type="text" id="inputtea" readonly="" value="0">
+                  <button id="addtea" onclick="inctea();">+</button>
+                  <input id="pricetea" value="20">EGP
+
+               </div>
+
+                                                                           
+
+           </div>
+
+         <!-------------------------------------------------------------------------------------------------------------------------------->
+
+           <div class="water">
+
+            <img src="jpg.16.png"  height="180" width="200">
+
+                <div class="btn9">
+
+                  <button id="subwater" onclick="decwater();" value="10">-</button>
+                  <input type="text" id="inputwater" readonly="" value="0">
+                  <button id="addwater" onclick="incwater();">+</button>
+                  <input id="pricewater" value="10">EGP
+
+                </div>
+
+           </div> 
+
+         <!-------------------------------------------------------------------------------------------------------------------------------->
+
+           <div class="juice">
+
+             <img src="jpg.17.png"  height="200" width="200">
+
+                <div class="btn10">
+
+                  <button id="subjuice" onclick="decjuice();" value="7">-</button>
+                  <input type="text" id="inputjuice" readonly="" value="0">
+                  <button id="addjuice" onclick="incjuice();">+</button>
+                  <input id="pricejuice" value="7">EGP
+
+                </div>
+
+           </div>
+
+         <!-------------------------------------------------------------------------------------------------------------------------------->
+
+           <div class="toast">
+
+             <img src="jpg.15.png"  >
+
+                <div class="btn11"> 
+
+                  <button id="subtoast" onclick="dectoast();" value="30">-</button>
+                  <input type="text" id="inputtoast" readonly="" value="0">
+                  <button id="addtoast" onclick="inctoast();">+</button>
+                  <input id="pricesan2" value="40">EGP
+
+               </div>
+
+           </div>
+
+         <!-------------------------------------------------------------------------------------------------------------------------------->
+
+           <div class="Crusoe">
+
+            <img src="jpg.13.png"  height="200" width="200">
+
+                 <div class="btn12">
+
+                  <button id="subcrusoe" onclick="deccrusoe();" value="23">-</button>
+                  <input type="text" id="inputcrusoe" readonly="" value="0">
+                  <button id="addcrusoe" onclick="inccrusoe();">+</button>
+                  <input id="pricecrusoe" value="30">EGP
+
+                 </div>
+
+           </div>
+
+         <!-------------------------------------------------------------------------------------------------------------------------------->
+
+           <div class="sandwich">
+
+            <img src="jpg.14.png"  height="200" width="250">
+
+                 <div class="btn13">
+
+                  <button id="subsandwich" onclick="decsandwich();" value="40">-</button>
+                  <input type="text" id="inputsandwich" readonly="" value="0">
+                  <button id="addsandwich" onclick="incsandwich();">+</button>
+                  <input id="pricesan1" value="23">EGP
+
+
+                 </div>
+
+           </div>
+
+         <!-------------------------------------------------------------------------------------------------------------------------------->
+
+       </div>
+        
+
+
+
+
+
+
+
+
+    <script src="seat.js"></script>
+    <script>
+      
+
+
+
+      
+
+var i=0;
+document.querySelector("#inputcoffe").value= i;
+function deccoffe(){ 
+  if(i>0){ 
+  i--;
+document.querySelector("#inputcoffe").value= i;}}
+function inccoffe(){
+  if(i<10){
+  i++;
+document.querySelector("#inputcoffe").value = i;}}
+
+var x=0;
+document.querySelector("#inputtea").value= x;
+function dectea(){ 
+  if(x>0){ 
+  x--;
+document.querySelector("#inputtea").value= x;}}
+function inctea(){
+  if(x<10){
+  x++;
+document.querySelector("#inputtea").value = x;}}
+
+var z=0;
+document.querySelector("#inputwater").value= z;
+function decwater(){ 
+  if(z>0){ 
+  z--;
+document.querySelector("#inputwater").value= z;}}
+function incwater(){
+  if(z<10){
+  z++;
+document.querySelector("#inputwater").value = z;}}
+
+var c=0;
+document.querySelector("#inputjuice").value= c;
+function decjuice(){ 
+  if(c>0){ 
+  c--;
+document.querySelector("#inputjuice").value= c;}}
+function incjuice(){
+  if(c<10){
+  c++;
+document.querySelector("#inputjuice").value = c;}}
+
+var a=0;
+document.querySelector("#inputsandwich").value= a;
+function decsandwich(){ 
+  if(a>0){ 
+  a--;
+document.querySelector("#inputsandwich").value= a;}}
+function incsandwich(){
+  if(a<10){
+  a++;
+document.querySelector("#inputsandwich").value = a;}}
+
+var s=0;
+document.querySelector("#inputtoast").value= s;
+function dectoast(){ 
+  if(s>0){ 
+  s--;
+document.querySelector("#inputtoast").value= s;}}
+function inctoast(){
+  if(s<10){
+  s++;
+document.querySelector("#inputtoast").value = s;}}
+
+var q=0;
+document.querySelector("#inputcrusoe").value= q;
+function deccrusoe(){ 
+  if(q>0){ 
+  q--;
+document.querySelector("#inputcrusoe").value= q;}}
+function inccrusoe(){
+  if(q<10){
+  q++;
+document.querySelector("#inputcrusoe").value = q;}}
+
+
+
+    </script>
+    </body>
+    
+</html>    

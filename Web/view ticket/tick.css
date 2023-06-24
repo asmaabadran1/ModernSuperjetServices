@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS';
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #ffff;
+    margin: 60px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+::selection
+{
+    color: white;
+    background-color: #3DC3AC;
+    
+}
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.fixprog
+{
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    width: 92%;
+}
+.myprogress
+{
+    width: 102%;
+    background-color: #e4e4e4;
+}
+.mybar
+{
+    width: 99%;
+    height: 8px;
+    background-color: #3DC3AC;
+    animation-name:load4;
+    animation-duration: 3s;
+}
+@keyframes load4 {
+  from {background-color: #3DC3AC; width:66%;}
+  to {background-color: #3DC3AC; width:99%;}
+}
+.fstep
+{
+    margin:35px 0px 0px 0px ;
+    font-size: 14px;
+    animation-name:fstep;
+    animation-duration: 3s;
+    color: #3DC3AC;
+}
+@keyframes fstep {
+  from {color: #fff;}
+  to {color: #3DC3AC;}
+}
+
+.bartitle
+{
+    display: flex;    
+    position: relative;
+    top: -16px;
+    left: -15px;
+}
+.bartitle p:not(.fstep)
+{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: -23px;
+    margin-left: 8px;
+    margin-top: 22px;
+    font-family: 'Trebuchet MS';
+
+}
+.bartwo p, .barthree p, .barfour p
+{
+    padding-top: 4px;
+}
+.barone
+{
+    height: 30px;
+    width: 80px;
+    background-color: #3DC3AC;
+    border-radius: 50%;
+    margin-right: 30%;
+    margin-top: -4px;
+
+
+}
+.bartwo
+{
+    height: 30px;
+    width: 80px;
+    background-color: #3DC3AC;
+    border-radius: 50%;
+    margin-right: 30%;
+    margin-top: -4px;
+    position: relative;
+    left: 18px;
+
+}
+.barthree
+{
+    height: 30px;
+    width: 80px;
+    background-color: #3DC3AC;
+    border-radius: 50%;
+    margin-right: 30%;
+    margin-top: -4px;
+    position: relative;
+    left: 35px;
+
+}
+.barfour
+{
+    height: 30px;
+    width: 80px;
+    background-color: #3DC3AC;
+    border-radius: 50%;
+    margin-left: 1%;
+    margin-top: -4px;
+    position: relative;
+    left: 54px;
+}
+#passpic
+{
+   width: 220px;
+   height: 220px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   position: absolute;
+   top: 120px;
+   left: 1000px;
+}
+h1
+{
+    color:#FBBB0D;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.passenger h2
+{
+    color:#3DC3AC;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.det
+{
+    color:#707070;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    display:flex;
+    justify-content: space-between;
+    width: 500px;
+}
+.headbody {
+    background-color: #ffff;
+    height: 120px;
+    width: 800px;
+    box-shadow: 0 3px 10px #999999;
+    position: relative;
+    top: 30px;
+    margin: auto;    
+    display: flex;
+    justify-content: space-between;
+} 
+.selectfrom {
+    padding: 5px 20px;
+    margin-top: 15px;
+}
+.selectfrom img{
+    width: 30px;
+}
+
+
+.selectfrom p {
+    color: #707070c9;
+    font-style: 'regular';
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 40px;
+   padding-top: 15px;
+  
+}
+
+.selectfrom .fromloc {
+    margin-top: -55px;
+}
+.selectfrom #passfromlocation
+{
+    border: none;
+    color: #707070c9;
+    font-style: 'regular';
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 30px;
+    padding-top: 15px;
+    outline: none;
+
+
+}
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+.selectto {
+    padding: 5px 5px;
+    margin-top: 15px;
+    position: relative;
+    left: -60px;
+
+}
+.selectto img{
+    width: 30px;
+
+}
+
+.selectto p {
+    color: #707070c9;
+    font-style: 'regular';
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 40px;
+   padding-top: 15px;
+   letter-spacing: 1px;
+  
+}
+
+.selectto .toloc {
+    margin-top: -55px;
+}
+.selectto #passtolocation
+{
+    border: none;
+    color: #707070c9;
+    font-style: 'regular';
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 30px;
+    padding-top: 15px;
+    outline: none;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+.selectdate {
+    margin-top: 20px;
+    position: relative;
+    left: -50px;
+}
+.selectdate img{
+    width: 30px;
+    position: relative;
+    left: -50px;
+}
+
+.pdateone {
+    color: #707070c9;
+    font-style: 'regular';
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 30px;
+    font-weight: 500;
+    position: relative;
+    top: -35px;
+    left: -10px;
+}
+
+#passdateone {
+   
+    color: #707070c9;
+    font-size: 23px;
+    position: relative;
+    top: -20px;
+    left: -30px;
+    border: none;
+    outline: none;
+   
+}
+
+
+#ticketbody {
+    background-color: #fff;
+    height: 210px;
+    width: 1000px;
+    margin: auto;
+    position: relative;
+    box-shadow: 0 3px 10px #999999;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 30px;
+    padding: 20px;
+} 
+.ticketbody p{
+    font-size: 20px;
+    color: #707070;
+}
+button
+{
+    background-color: #FBBB0D;
+    font-size: 25px;
+    width: 200px;
+    color: #fff;
+    padding: 10px;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+}
+button:hover
+{
+    background-color: #faab00;
+    box-shadow: 0 3px 10px #999999;
+    padding-top: 8px;
+}
+.buttons
+{
+    width: 450px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.menustyle
+{
+    margin-bottom: 20px;
+}
+.menustyle p
+{
+    font-size: 25px;
+    color: #707070;
+    font-family: 'Trebuchet MS';
+    margin-bottom: 5px;
+}

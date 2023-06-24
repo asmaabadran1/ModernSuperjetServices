@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" type="image/x-icon" href="Home/jpg.3.png">
+        <title>Superjet Services</title>
+        <script src="https://kit.fontawesome.com/5826bdd02e.js" crossorigin="anonymous"></script> <!--Fontawsome CDN-->
+
+        </head>
+
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+
+    <body>
+
+        <div class="img-bg" id="top">
+            <div style="margin: 0 150px">
+                <div class="nav">
+                    <div class="nav-img" alt="logo" id="logo">
+                        <img src="home/jpg.3.png">
+                    </div>
+
+                    <div class="nav-links">
+                        <ul>
+                            <li><a href="#" class="active"> HOME <div class="line"></div></a></li>
+                            <li><a href="Services/services.html"> SERVICES <div class="line"></div></a></li>
+                            <li><a href="OFFERS/offers.html"> OFFERS <div class="line"></div></a></li>
+                            <li><a href="CONTACT US/contact us.html"> CONTACT US <div class="line"></div></a></li>
+                        </ul>
+                        <a href="view ticket/tick.html"><i class="far fa-bell icon"></i></a>
+                        <a href="sign log/html.html"><i class="far fa-user-circle icon"></i></a>
+                    </div>
+                </div>
+            </div> 
+             <div class="txt-header">
+                <p class="header-up">easy booking <br> easy travelling</p>
+                <hr>
+                <p   class="header-down">get your ticket now!</p>
+            </div>
+
+        </div>
+
+        <!---------------------------------------------------------------------------------------------------------------------------->
+        <div class="select">
+            <div class="top-select">
+                <p class="title1">book a ticket</p>
+                <p class="title2">and select a trip</p>
+            </div>
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" id="toggle-btn1" onclick="leftClick()">One Way</button>
+                    <span class="space"> | </span>
+                    <button type="button" id="toggle-btn2" onclick="rightClick()">Round Trip</button>
+                </div>
+            </div>
+        <!--------------------------------------------------------------------------------------------------------------------------------------->
+        <br>
+        <br>
+        <br>
+        <br>
+    
+            <form onsubmit="return checkForm()" action="select_ticket/part1.html">
+                <div class="inlineselect">
+
+            <span class="icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="25" height="25"
+                    viewBox="0 0 226 226"
+                    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,226v-226h226v226z" fill="none"></path><g fill="#707070"><path d="M113,4.52c-39.95609,0 -72.32,32.36391 -72.32,72.32c0,33.03484 17.44438,68.54156 34.60625,96.05c17.16187,27.50844 34.32375,47.03625 34.32375,47.03625c0.86516,0.97109 2.10109,1.53609 3.39,1.53609c1.28891,0 2.52484,-0.565 3.39,-1.53609c0,0 17.17953,-19.93391 34.32375,-47.60125c17.14422,-27.66734 34.60625,-63.08578 34.60625,-95.485c0,-39.95609 -32.36391,-72.32 -72.32,-72.32zM113,13.56c35.08297,0 63.28,28.19703 63.28,63.28c0,29.07984 -16.43797,63.65078 -33.19375,90.6825c-14.03672,22.65297 -25.91937,37.23703 -30.08625,42.23375c-4.20219,-4.96141 -16.08484,-19.22766 -30.08625,-41.66875c-16.73812,-26.8375 -33.19375,-61.46141 -33.19375,-91.2475c0,-35.08297 28.19703,-63.28 63.28,-63.28zM113,49.72c-17.42672,0 -31.64,14.21328 -31.64,31.64c0,17.42672 14.21328,31.64 31.64,31.64c17.42672,0 31.64,-14.21328 31.64,-31.64c0,-17.42672 -14.21328,-31.64 -31.64,-31.64zM113,58.76c12.53594,0 22.6,10.06406 22.6,22.6c0,12.53594 -10.06406,22.6 -22.6,22.6c-12.53594,0 -22.6,-10.06406 -22.6,-22.6c0,-12.53594 10.06406,-22.6 22.6,-22.6z"></path></g></g></svg>
+                </span><label>From</label>
+            
+            <div class="custom-select" >
+            
+                <!--<select name="location1" id="location1" required="required">
+                  <option value="">Enter Place</option>
+                  <optgroup label="Cairo">
+                      <option value="Giza">Giza</option>
+                      <option value="Nasr city">Nasr city</option>
+                      <option value="Tagamou elkhames">Tagamou elkhames</option>
+                      <option value="Almaza">Almaza</option>
+                      <option value="Tahrir">Tahrir</option>
+                  </optgroup>
+                  <optgroup label="Alexandria">
+                    <option value="Moharam bek">Moharam bek</option>
+                    <option value="Abees">Abees</option>
+                  </optgroup>
+                  <optgroup label="Luxor">
+                    <option value="Ramses">Ramses</option>
+                  </optgroup>
+                  <optgroup label="Suze">
+                    <option value="Porto elsokhna">Porto elsokhna</option>
+                    <option value="Porto south beach">Porto south beach</option>
+                    <option value="Grand ocean">Grand ocean</option>
+                    <option value="Cancoun">Cancoun</option>
+                </optgroup>
+                <optgroup label="Qena">
+                    <option value="Sidi abdelraheem">Sidi abdelraheem</option>
+                </optgroup>
+                <optgroup label="Assiut">
+                    <option value="Elshader">Elshader</option>
+                </optgroup>
+                <optgroup label="Gharbia">
+                    <option value="Tanta">Tanta</option>
+                    <option value="Mahalla">Mahalla</option>
+                </optgroup>
+                <optgroup label="Safaga">
+                    <option value="Safaga">Safaga</option>
+                </optgroup>
+                <optgroup label="Sharm elshiekh">
+                    <option value="Royssat">Royssat</option>
+                </optgroup>
+                <optgroup label="South Sinai">
+                    <option value="Dahab">Dahab</option>
+                </optgroup>
+                <optgroup label="Hurghada">
+                    <option value="Elgouna">Elgouna</option>
+                    <option value="Sahl heshesh">Sahl heshesh</option>
+                    <option value="Hurghada">Hurghada</option>
+                </optgroup>
+                <optgroup label="Red sea">
+                    <option value="Marsa alam">Marsa alam</option>
+                    <option value="The cesar">The cesar</option>
+                    <option value="Makadi">Makadi</option>
+                    <option value="Soma bay">Soma bay</option>
+                </optgroup>
+                <optgroup label="Nuweiba">
+                    <option value="Taba">Taba</option>
+                    <option value="Nuweiba">Nuweiba</option>
+                </optgroup>
+                <optgroup label="Matrouh">
+                    <option value="Marsa matrouh">Marsa matrouh</option>
+                </optgroup>
+                <optgroup label="Elmenia">
+                    <option value="Minya">Minya</option>
+                    <option value="Mallawi">Mallawi</option>
+                </optgroup>
+                <optgroup label="port said">
+                    <option value="Port said">Port said</option>
+                </optgroup>
+                  
+                </select>-->
+
+                <select name="location1" id="location1" required="required">
+                    <option value="">Enter Place</option>
+                    <option value="Cairo">Cairo</option>
+                    <option value="Alexandria">Alexandria</option>
+                    <option value="Luxor">Luxor</option>
+                    <option value="Suze">Suze</option>
+                    <option value="Qena">Qena</option>
+                    <option value="Assiut">Assiut</option>
+                    <option value="Gharbia">Gharbia</option>
+                    <option value="Safaga">Safaga</option>
+                    <option value="Sharm elshiekh">Sharm elshiekh</option>
+                    <option value="South Sinai">South Sinai</option>
+                    <option value="Hurghada">Hurghada</option>
+                    <option value="Nuweiba">Nuweiba</option>
+                    <option value="Red sea">Red sea</option>
+                    <option value="Matrouh">Matrouh</option>
+                    <option value="Elmenia">Elmenia</option>
+                    <option value="port said">Port said</option>
+                </select>
+            </div>
+        </div>
+            <div class="inlineselect">
+                <span class="icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="25" height="25"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#707070"><path d="M86,3.44c-30.34187,0 -55.04,24.69813 -55.04,55.04c0,48.54969 50.32344,106.45188 52.46,108.8975c0.65844,0.7525 1.58563,1.1825 2.58,1.1825c1.06156,-0.06719 1.92156,-0.43 2.58,-1.1825c2.13656,-2.48594 52.46,-61.3825 52.46,-108.8975c0,-30.34187 -24.69812,-55.04 -55.04,-55.04zM86,41.28c11.395,0 20.64,9.245 20.64,20.64c0,11.395 -9.245,20.64 -20.64,20.64c-11.395,0 -20.64,-9.245 -20.64,-20.64c0,-11.395 9.245,-20.64 20.64,-20.64z"></path></g></g></svg>
+                </span><label>To</label>
+                
+                <div class="custom-select" >
+
+                    <select name="location2" id="location2" required="required" >
+                        <option value="">Enter Place</option>
+                        <option value="Cairo">Cairo</option>
+                        <option value="Alexandria">Alexandria</option>
+                        <option value="Luxor">Luxor</option>
+                        <option value="Suze">Suze</option>
+                        <option value="Qena">Qena</option>
+                        <option value="Assiut">Assiut</option>
+                        <option value="Gharbia">Gharbia</option>
+                        <option value="Safaga">Safaga</option>
+                        <option value="Sharm elshiekh">Sharm elshiekh</option>
+                        <option value="South Sinai">South Sinai</option>
+                        <option value="Hurghada">Hurghada</option>
+                        <option value="Nuweiba">Nuweiba</option>
+                        <option value="Red sea">Red sea</option>
+                        <option value="Matrouh">Matrouh</option>
+                        <option value="Elmenia">Elmenia</option>
+                        <option value="Port said">Port said</option>
+                    </select>
+                </div>
+            </div>
+            <div class="inlineselect">
+                <span class="icons">
+                    <i class="bi bi-calendar2"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-calendar2" viewBox="0 0 16 16">
+                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"/>
+                        <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z"/>
+                    </svg>
+                </span><label>Departure Date</label>
+                
+                <div class="custom-date" style="width:250px; ">
+                    <input type="date" name="date" class="date" id="date1" min="" required> <!--"YY-MM-DD"-->
+
+                </div>
+            </div>
+            <div class="inlineselect">
+               <span class="icons">
+                    <i class="bi bi-calendar2-event"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-calendar2-event" viewBox="0 0 16 16">
+                                    <path d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"/>
+                                    <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z"/>
+                                </svg>
+                            </span><label>Return Date</label>
+                
+                <div class="custom-date" style="width:250px; ">
+                
+                    <input type="date" name="date" id="disable" class="date"  min="" required disabled> <!--"YY-MM-DD"-->
+                </div>
+
+            </div>
+            <input type="submit" value="" class="selectbtn" onclick="valueSender()"> 
+
+            </form>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="head1">
+        <h1> WHAT WE OFFER </h1>
+        </div>
+
+        <div class="head2">
+        <h3> SEE WHAT WE CAN DO FOR YOU </h3>
+        </div>
+
+        <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="imgs">
+        <div class="img-home1">
+            <img src="home/jpg.5.png">
+            <img src="home/jpg.8.png">
+        </div>
+
+        <div class="img-home2">
+            <img src="home/jpg.7.png">
+            <img src="home/jpg.10.png">
+            <img src="home/jpg.9.png">
+        </div>   
+    </div>
+<!--------------------------------------Read more button----------------------------------------------->
+    <div id="readbox">
+        <p class="read">We provide distinguished services that exceed our customers' expectations and expectations to become the easiest and safest solution.  Such as services inside the bus and taking precautionary measures.  We also excel in organizing appointments, scanning code and mask, and always striving to become a leading company in the field of passenger transportation services by all means using all modern technologies to provide comfort and luxury to our customers.</p>
+    </div>
+        <!---------------------------------------------------------------------------------------------------------------------------------------------------------->
+        
+        <div class="button-box1">
+          <button class="btn1" onclick="read()">  READ MORE</button>
+          <button class="btn2"><a href="Services/services.html"> OUR SERVICES </a></button>
+        </div>    
+        
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <br> 
+
+        <div class="img-bg1" >
+            <div class="paragraph1">
+                <h2> Contact us </h2>
+                <br>
+                <p> We are available 24/7 via the hotline or send your comment via this email superservice@gmail.com 
+                    or by phone +201157659421 </p>
+                <br>
+                <a href="CONTACT US/contact us.html"><button class="btn3"> CONTACT US </button></a>
+            </div>
+
+        </div>
+       <!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+       <br>
+       <br>
+       <div class="head3">
+        <h1> WHY CHOOSE US </h1>
+        </div>
+
+        <div class="head4">
+        <h3> SEE WHAT WE CAN DO FOR YOU </h3>
+        </div>
+    
+        <!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+        <div class="img-bg2">
+            <div class="icon1">
+                <svg class="part1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                 width="40" height="40"
+                 viewBox="0 0 172 172"
+                 style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3dc3ac"><path d="M5.375,14.78125c-2.28438,0 -4.03125,1.74687 -4.03125,4.03125v147.8125c0,2.28438 1.74687,4.03125 4.03125,4.03125h147.8125c2.28438,0 4.03125,-1.74687 4.03125,-4.03125c0,-2.28438 -1.74687,-4.03125 -4.03125,-4.03125h-143.78125v-143.78125c0,-2.28438 -1.74688,-4.03125 -4.03125,-4.03125zM139.75,55.09375c-2.28438,0 -4.03125,1.74687 -4.03125,4.03125c0,2.28438 1.74687,4.03125 4.03125,4.03125h17.20105l-41.2547,41.11822c-1.6125,1.6125 -4.16457,1.6125 -5.6427,0l-28.89062,-28.89062c-4.70312,-4.70312 -12.36407,-4.70312 -17.0672,0l-14.51093,14.51355c-1.6125,1.6125 -1.6125,4.16457 0,5.6427c0.80625,0.80625 1.88072,1.2099 2.82135,1.2099c0.94063,0 2.0151,-0.40365 2.82135,-1.2099l14.51355,-14.51093c1.6125,-1.6125 4.16457,-1.6125 5.6427,0l28.89063,28.89063c4.70313,4.70313 12.36407,4.70313 17.0672,0l41.25208,-41.12085v17.20105c0,2.28437 1.74687,4.03125 4.03125,4.03125c2.28438,0 4.03125,-1.74688 4.03125,-4.03125v-26.875c0,-2.28438 -1.74687,-4.03125 -4.03125,-4.03125zM37.57513,103.46875c-1.02461,0 -2.03242,0.40365 -2.77148,1.2099l-5.375,5.375c-1.6125,1.6125 -1.6125,4.16457 0,5.6427c0.80625,0.80625 1.88072,1.2099 2.82135,1.2099c0.94062,0 2.0151,-0.40365 2.82135,-1.2099l5.375,-5.375c1.6125,-1.6125 1.6125,-4.16457 0,-5.6427c-0.80625,-0.80625 -1.84661,-1.2099 -2.87121,-1.2099z"></path></g></g></svg>
+        
+                 <h3> HIGH QUALITY </h3>
+            </div>
+        
+            <br>
+        
+            <div class="icon2">
+                <svg class="part2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="50" height="50"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3dc3ac"><path d="M64.5,7.16667v14.33333h43v-14.33333zM135.87272,20.01628l-9.26627,10.93197l21.13606,17.91667l9.26628,-10.93197zM86,28.66667c-35.67175,0 -64.5,28.82825 -64.5,64.5c0,35.67175 28.82825,64.5 64.5,64.5c35.67175,0 64.5,-28.82825 64.5,-64.5c0,-35.67175 -28.82825,-64.5 -64.5,-64.5zM86,43c28.02559,0 50.16667,22.14108 50.16667,50.16667c0,28.02559 -22.14108,50.16667 -50.16667,50.16667c-28.02558,0 -50.16667,-22.14108 -50.16667,-50.16667c0,-28.02558 22.14108,-50.16667 50.16667,-50.16667zM78.83333,57.33333v43h14.33333v-43z"></path></g></g></svg>
+        
+                <h3> ON TIME </h3>
+            </div>
+        
+            <br>
+        
+            <div class="icon3">
+                <svg  class="part3" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="50" height="50"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3dc3ac"><path d="M66.87844,3.44c-4.42946,0 -8.38933,2.85661 -9.78922,7.06141l-2.29781,6.88c-2.19201,6.58621 2.85405,13.57859 9.79594,13.57859h4.21265v10.32h-8.66719c-9.23466,0 -17.40106,6.10905 -20.14281,14.99625v0.00672l-7.98188,25.91422c-3.85402,12.51432 -5.30647,19.37377 -3.99766,32.66656l0.90031,9.15094c-0.86032,-0.10244 -1.72544,-0.17469 -2.60016,-0.17469c-7.5037,0 -13.46239,6.65047 -12.43641,14.05563l1.46469,10.51484c0.55503,3.98567 3.04283,7.4481 6.63141,9.29203l18.39594,9.45328c1.79135,0.92167 3.77942,1.40422 5.79828,1.40422h79.67094c2.01886,0 4.00745,-0.48038 5.79828,-1.40422l18.38922,-9.45328c3.58857,-1.84393 6.0831,-5.30636 6.63813,-9.29203l1.45797,-10.51484c1.03084,-7.4059 -4.92599,-14.05563 -12.42969,-14.05563c-0.87471,0 -1.73963,0.07236 -2.60015,0.17469l0.8936,-9.15094c1.30882,-13.29279 -0.14362,-20.15224 -3.99766,-32.66656l-7.98187,-25.91422c-2.73458,-8.89046 -10.90815,-15.00297 -20.14281,-15.00297h-8.66047v-10.32h4.21265c6.94189,0 11.98795,-6.99239 9.79594,-13.57859l-2.29781,-6.88v-0.00672c-1.40068,-4.19947 -5.36164,-7.05469 -9.78922,-7.05469zM66.87844,10.32h38.24313c1.49421,0 2.79304,0.933 3.26531,2.35156l2.2911,6.88c0.77327,2.32339 -0.816,4.52844 -3.26531,4.52844h-42.82531c-2.44931,0 -4.03858,-2.20505 -3.26531,-4.52844l2.2911,-6.88c0.47148,-1.41616 1.7711,-2.35156 3.26531,-2.35156zM75.68,30.96h20.64v10.32h-20.64zM60.13281,48.16h51.72765c6.21094,0 11.69702,4.07178 13.56516,10.14531l7.98187,25.91422c3.80342,12.35 4.97257,17.34129 3.7289,29.97234l-1.16906,11.91235c-1.76822,0.87312 -3.42058,1.98766 -4.90469,3.32578l-1.71328,1.5386c-1.38352,1.24084 -3.26124,1.74369 -5.07937,1.33703h-0.00672c-7.99171,-1.7835 -22.23186,-5.31453 -38.25656,-5.31453c-16.02521,0 -30.27407,3.53499 -38.26328,5.31453c-1.82578,0.40788 -3.70899,-0.09113 -5.08609,-1.33031l-1.72,-1.55203v0.00672c-1.4874,-1.33847 -3.14136,-2.45218 -4.91141,-3.32578l-1.16906,-11.91235c-1.24366,-12.63105 -0.07451,-17.62234 3.72891,-29.97234l7.98187,-25.91422c1.87473,-6.07696 7.35422,-10.14531 13.56516,-10.14531zM86.02687,58.48c-9.18682,-0.01066 -18.57787,1.87209 -23.39469,8.14985c-1.00564,1.31035 -1.3801,2.53552 -1.85437,4.12531c-0.47427,1.58979 -0.90672,3.47777 -1.3236,5.63031c-0.83376,4.30508 -1.59235,9.65553 -2.24406,15.35235c-1.30342,11.39363 -2.17015,24.07576 -2.17015,32.10219h6.88c0,-7.51894 0.85326,-20.15709 2.12985,-31.3161c0.63829,-5.5795 1.38469,-10.81399 2.16344,-14.835c0.38937,-2.0105 0.79005,-3.71721 1.16235,-4.96515c0.37229,-1.24795 0.85783,-2.0979 0.71219,-1.90812c2.16982,-2.82793 9.957,-5.46482 17.93234,-5.45563c7.97534,0.00929 15.75889,2.67501 17.89203,5.45563c-0.14565,-0.18979 0.33991,0.66018 0.71219,1.90812c0.3723,1.24795 0.77297,2.95465 1.16235,4.96515c0.77874,4.02101 1.52515,9.2555 2.16344,14.835c1.27658,11.15901 2.12985,23.79716 2.12985,31.3161h6.88c0,-8.02642 -0.86674,-20.70855 -2.17015,-32.10219c-0.65171,-5.69682 -1.41031,-11.04726 -2.24406,-15.35235c-0.41688,-2.15254 -0.84932,-4.04052 -1.3236,-5.63031c-0.47427,-1.58979 -0.84873,-2.81496 -1.85437,-4.12531c-4.79158,-6.24595 -14.15412,-8.13926 -23.34094,-8.14985zM26.31063,130.72c3.72151,0 7.29854,1.37028 10.02438,3.82297h0.00672l1.71328,1.54531c1.87383,1.68615 4.22187,2.49546 6.665,2.84875v22.3936c-0.4018,-0.10651 -0.83193,-0.09819 -1.20265,-0.28891h-0.00672l-18.39594,-9.45328c-1.63335,-0.83927 -2.71992,-2.37995 -2.96297,-4.12531l-1.46469,-10.51485c-0.46009,-3.32076 2.09177,-6.22828 5.62359,-6.22828zM145.68937,130.72c3.53183,0 6.079,2.90826 5.61688,6.22828l-1.46469,10.51485c-0.24307,1.74536 -1.32962,3.28604 -2.96297,4.12531l-18.39594,9.45328h-0.00672c-0.36677,0.1892 -0.79631,0.18268 -1.19594,0.28891v-22.40031c2.44445,-0.35296 4.78919,-1.15967 6.665,-2.84203l1.72672,-1.54531c2.7173,-2.44986 6.29615,-3.82297 10.01765,-3.82297zM86.00672,133.8711c13.88844,0 26.11079,2.79397 34.39328,4.66281v23.1461h-68.8v-23.1461c8.28437,-1.86693 20.51829,-4.66281 34.40672,-4.66281z"></path></g></g></svg>
+                
+                <h3> COMFORTABLE </h3>
+            </div> 
+            
+            <br>
+        
+            <div class="icon4">
+               <svg  class="part4" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+               width="50" height="50"
+               viewBox="0 0 172 172"
+               style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3dc3ac"><path d="M120.4,0c-13.62562,0 -26.02844,1.96188 -35.26,5.2675c-4.6225,1.65281 -8.385,3.56094 -11.2875,6.02c-2.9025,2.45906 -5.0525,5.67063 -5.0525,9.3525c0,0.68531 0.08063,1.3975 0.215,2.0425c-0.16125,0.44344 -0.24187,0.92719 -0.215,1.3975v20.64c0,0.68531 0.08063,1.3975 0.215,2.0425c-0.16125,0.44344 -0.24187,0.92719 -0.215,1.3975v11.395c-5.38844,-0.71219 -11.15312,-1.075 -17.2,-1.075c-13.62562,0 -26.02844,1.96188 -35.26,5.2675c-4.6225,1.65281 -8.385,3.56094 -11.2875,6.02c-2.9025,2.45906 -5.0525,5.67063 -5.0525,9.3525c0,0.68531 0.08063,1.3975 0.215,2.0425c-0.16125,0.44344 -0.24187,0.92719 -0.215,1.3975v20.64c0,0.68531 0.08063,1.3975 0.215,2.0425c-0.16125,0.44344 -0.24187,0.92719 -0.215,1.3975v20.64c0,0.68531 0.08063,1.3975 0.215,2.0425c-0.16125,0.44344 -0.24187,0.92719 -0.215,1.3975v20.64c0,3.68188 2.15,6.89344 5.0525,9.3525c2.9025,2.45906 6.665,4.36719 11.2875,6.02c9.23156,3.29219 21.62094,5.2675 35.26,5.2675c13.63906,0 26.02844,-1.97531 35.26,-5.2675c4.6225,-1.65281 8.385,-3.56094 11.2875,-6.02c2.9025,-2.45906 5.0525,-5.67062 5.0525,-9.3525v-14.835c5.38844,0.71219 11.13969,1.075 17.2,1.075c13.63906,0 26.02844,-1.97531 35.26,-5.2675c4.6225,-1.65281 8.385,-3.56094 11.2875,-6.02c2.9025,-2.45906 5.0525,-5.67062 5.0525,-9.3525v-20.64c0.02688,-0.47031 -0.05375,-0.95406 -0.215,-1.3975c0.13438,-0.645 0.215,-1.35719 0.215,-2.0425v-20.64c0.02688,-0.47031 -0.05375,-0.95406 -0.215,-1.3975c0.13438,-0.645 0.215,-1.35719 0.215,-2.0425v-20.64c0.02688,-0.47031 -0.05375,-0.95406 -0.215,-1.3975c0.13438,-0.645 0.215,-1.35719 0.215,-2.0425v-20.64c-0.01344,-0.48375 -0.12094,-0.95406 -0.3225,-1.3975c0.14781,-0.65844 0.3225,-1.34375 0.3225,-2.0425c0,-3.68187 -2.15,-6.89344 -5.0525,-9.3525c-2.9025,-2.45906 -6.665,-4.36719 -11.2875,-6.02c-9.23156,-3.30562 -21.63437,-5.2675 -35.26,-5.2675zM120.4,6.88c12.96719,0 24.69813,1.90813 32.895,4.8375c4.09844,1.46469 7.28313,3.18469 9.245,4.8375c1.96188,1.65281 2.58,3.01 2.58,4.085c0,1.075 -0.61812,2.43219 -2.58,4.085c-1.96187,1.65281 -5.14656,3.37281 -9.245,4.8375c-8.19687,2.92938 -19.92781,4.8375 -32.895,4.8375c-12.96719,0 -24.69812,-1.90812 -32.895,-4.8375c-4.09844,-1.46469 -7.28312,-3.18469 -9.245,-4.8375c-1.96187,-1.65281 -2.58,-3.01 -2.58,-4.085c0,-1.075 0.61813,-2.43219 2.58,-4.085c1.96188,-1.65281 5.14656,-3.37281 9.245,-4.8375c8.19688,-2.92937 19.92781,-4.8375 32.895,-4.8375zM75.68,31.2825c2.62031,1.8275 5.72438,3.39969 9.46,4.73c9.23156,3.30563 21.63438,5.2675 35.26,5.2675c13.62563,0 26.02844,-1.96187 35.26,-5.2675c3.73563,-1.33031 6.83969,-2.9025 9.46,-4.73v13.4375c0,1.075 -0.61812,2.43219 -2.58,4.085c-1.96187,1.65281 -5.14656,3.37281 -9.245,4.8375c-8.19687,2.92938 -19.92781,4.8375 -32.895,4.8375c-12.96719,0 -24.69812,-1.90812 -32.895,-4.8375c-4.09844,-1.46469 -7.28312,-3.18469 -9.245,-4.8375c-1.96187,-1.65281 -2.58,-3.01 -2.58,-4.085zM75.68,55.3625c2.62031,1.8275 5.72438,3.39969 9.46,4.73c9.23156,3.30563 21.62094,5.2675 35.26,5.2675c13.63906,0 26.02844,-1.96187 35.26,-5.2675c3.73563,-1.33031 6.83969,-2.9025 9.46,-4.73v13.4375c0,1.075 -0.61812,2.43219 -2.58,4.085c-1.96187,1.65281 -5.14656,3.37281 -9.245,4.8375c-8.19687,2.92938 -19.92781,4.8375 -32.895,4.8375c-6.19469,0 -12.13406,-0.41656 -17.5225,-1.1825c0,-0.06719 0,-0.14781 0,-0.215c0.14781,-0.65844 0.3225,-1.34375 0.3225,-2.0425c0,-3.68187 -2.15,-6.89344 -5.0525,-9.3525c-2.9025,-2.45906 -6.665,-4.36719 -11.2875,-6.02c-3.34594,-1.19594 -7.10844,-2.19031 -11.18,-3.01zM51.6,65.36c12.96719,0 24.69813,1.90813 32.895,4.8375c4.09844,1.46469 7.28313,3.18469 9.245,4.8375c1.96188,1.65281 2.58,3.01 2.58,4.085c0,1.075 -0.61812,2.43219 -2.58,4.085c-1.96187,1.65281 -5.14656,3.37281 -9.245,4.8375c-8.19687,2.92938 -19.92781,4.8375 -32.895,4.8375c-12.96719,0 -24.69812,-1.90812 -32.895,-4.8375c-4.09844,-1.46469 -7.28312,-3.18469 -9.245,-4.8375c-1.96187,-1.65281 -2.58,-3.01 -2.58,-4.085c0,-1.075 0.61813,-2.43219 2.58,-4.085c1.96188,-1.65281 5.14656,-3.37281 9.245,-4.8375c8.19688,-2.92937 19.92781,-4.8375 32.895,-4.8375zM165.12,79.4425v13.4375c0,1.075 -0.61812,2.43219 -2.58,4.085c-1.96187,1.65281 -5.14656,3.37281 -9.245,4.8375c-8.19687,2.92938 -19.92781,4.8375 -32.895,4.8375c-6.18125,0 -12.05344,-0.51062 -17.415,-1.29c-0.04031,0 -0.06719,0 -0.1075,0c0.01344,-0.04031 -0.01344,-0.06719 0,-0.1075c0.14781,-0.65844 0.3225,-1.34375 0.3225,-2.0425v-14.835c5.36156,0.69875 11.16656,1.075 17.2,1.075c13.63906,0 26.02844,-1.96187 35.26,-5.2675c3.73563,-1.33031 6.83969,-2.9025 9.46,-4.73zM6.88,89.7625c2.62031,1.8275 5.72438,3.39969 9.46,4.73c9.23156,3.30563 21.63438,5.2675 35.26,5.2675c13.62563,0 26.02844,-1.96187 35.26,-5.2675c3.73563,-1.33031 6.83969,-2.9025 9.46,-4.73v13.4375c0,1.075 -0.61812,2.43219 -2.58,4.085c-1.96187,1.65281 -5.14656,3.37281 -9.245,4.8375c-8.19687,2.92938 -19.92781,4.8375 -32.895,4.8375c-12.96719,0 -24.69812,-1.90812 -32.895,-4.8375c-4.09844,-1.46469 -7.28312,-3.18469 -9.245,-4.8375c-1.96187,-1.65281 -2.58,-3.01 -2.58,-4.085zM165.12,103.5225v13.4375c0,1.075 -0.61812,2.43219 -2.58,4.085c-1.96187,1.65281 -5.14656,3.37281 -9.245,4.8375c-8.19687,2.92938 -19.92781,4.8375 -32.895,4.8375c-6.235,0 -12.12062,-0.51062 -17.5225,-1.29c0,-0.04031 0,-0.06719 0,-0.1075c0.14781,-0.65844 0.3225,-1.34375 0.3225,-2.0425v-14.835c5.375,0.71219 11.18,1.075 17.2,1.075c13.63906,0 26.02844,-1.97531 35.26,-5.2675c3.73563,-1.33031 6.83969,-2.9025 9.46,-4.73zM6.88,113.8425c2.62031,1.8275 5.72438,3.39969 9.46,4.73c9.23156,3.29219 21.62094,5.2675 35.26,5.2675c13.63906,0 26.02844,-1.97531 35.26,-5.2675c3.73563,-1.33031 6.83969,-2.9025 9.46,-4.73v13.4375c0,1.075 -0.61812,2.43219 -2.58,4.085c-1.96187,1.65281 -5.14656,3.37281 -9.245,4.8375c-8.19687,2.92938 -19.92781,4.8375 -32.895,4.8375c-12.96719,0 -24.69812,-1.90812 -32.895,-4.8375c-4.09844,-1.46469 -7.28312,-3.18469 -9.245,-4.8375c-1.96187,-1.65281 -2.58,-3.01 -2.58,-4.085zM6.88,137.9225c2.62031,1.8275 5.72438,3.39969 9.46,4.73c9.23156,3.29219 21.62094,5.2675 35.26,5.2675c13.63906,0 26.02844,-1.97531 35.26,-5.2675c3.73563,-1.33031 6.83969,-2.9025 9.46,-4.73v13.4375c0,1.075 -0.61812,2.43219 -2.58,4.085c-1.96187,1.65281 -5.14656,3.37281 -9.245,4.8375c-8.19687,2.92938 -19.92781,4.8375 -32.895,4.8375c-12.96719,0 -24.69812,-1.90812 -32.895,-4.8375c-4.09844,-1.46469 -7.28312,-3.18469 -9.245,-4.8375c-1.96187,-1.65281 -2.58,-3.01 -2.58,-4.085z"></path></g></g></svg>
+                
+               <h3> SAVE MONEY </h3>
+            </div>   
+        
+            <br>
+        
+            <div class="icon5">
+               <svg  class="part5" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+               width="50" height="50"
+               viewBox="0 0 172 172"
+               style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3dc3ac"><path d="M86,0c-8.43875,0 -15.56062,4.66281 -26.1225,10.105c-10.56187,5.44219 -24.73844,12.01313 -46.87,16.8775l-2.6875,0.645v2.6875c0,52.70188 18.47656,87.92156 36.98,109.7575c18.50344,21.83594 37.3025,30.53 37.3025,30.53l1.505,0.7525l1.505,-0.7525c0,0 74.0675,-38.27 74.0675,-140.2875v-2.6875l-2.6875,-0.645c-22.13156,-4.86437 -36.30812,-11.43531 -46.87,-16.8775c-10.56187,-5.44219 -17.68375,-10.105 -26.1225,-10.105zM86,6.88c5.65719,0 12.21469,3.80281 23.005,9.3525c10.25281,5.2675 24.67125,11.73094 45.58,16.6625c-1.26312,93.28313 -64.27156,128.27438 -68.6925,130.6125c-2.13656,-1.03469 -17.02531,-8.47906 -33.4325,-27.8425c-17.29406,-20.41156 -34.41344,-53.23937 -35.045,-102.77c20.90875,-4.93156 35.32719,-11.395 45.58,-16.6625c10.79031,-5.54969 17.34781,-9.3525 23.005,-9.3525zM112.445,50.31l-1.8275,2.9025l-27.95,43.43l-18.49,-16.6625l-2.4725,-2.2575l-4.6225,5.0525l2.58,2.365l21.285,19.35l3.01,2.6875l2.2575,-3.44l30.2075,-46.87l1.8275,-2.9025z"></path></g></g></svg>
+        
+               <h3> SMART GAINT </h3>
+            </div>  
+            
+            <br>
+        
+            <div class="icon6">
+               <svg class="part6" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+               width="50" height="50"
+               viewBox="0 0 172 172"
+               style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3dc3ac"><path d="M13.76,13.76v3.44v44.72h48.16v-48.16zM110.08,13.76v3.44v44.72h48.16v-48.16zM20.64,20.64h34.4v34.4h-34.4zM68.8,20.64v3.44v17.2h13.76v10.32h-13.76v3.44v13.76h-30.96v3.44v10.32h-13.76v3.44v17.2h20.64v-13.76h10.32v13.76h20.64v-27.52h6.88v13.76h24.08v10.32h17.2v10.32h-27.52v3.44v10.32h-13.76v3.44v17.2h20.64v-13.76h20.64v27.52h34.4v-34.4h-27.52v-6.88h27.52v-34.4h-20.64v3.44v6.88h-6.88v-24.08h-41.28v-10.32h13.76v-24.08h-13.76v-13.76zM116.96,20.64h34.4v34.4h-34.4zM27.52,27.52v3.44v17.2h20.64v-20.64zM75.68,27.52h6.88v6.88h-6.88zM123.84,27.52v3.44v17.2h20.64v-20.64zM34.4,34.4h6.88v6.88h-6.88zM130.72,34.4h6.88v6.88h-6.88zM89.44,41.28h6.88v10.32h-6.88zM75.68,58.48h6.88v10.32h-6.88zM44.72,75.68h24.08v20.64h-6.88v-13.76h-17.2zM89.44,75.68h34.4v17.2h-10.32v-10.32h-24.08zM30.96,89.44h6.88v6.88h-6.88zM144.48,89.44h6.88v20.64h-20.64v-10.32h13.76zM13.76,110.08v3.44v44.72h48.16v-48.16zM20.64,116.96h34.4v34.4h-34.4zM103.2,116.96h20.64v6.88h-20.64zM27.52,123.84v3.44v17.2h20.64v-20.64zM34.4,130.72h6.88v6.88h-6.88zM89.44,130.72h6.88v6.88h-6.88zM130.72,130.72h20.64v20.64h-20.64z"></path></g></g></svg>
+                
+               <h3> QR TICKET </h3>
+            </div> 
+            
+            <br>
+        
+            <div class="icon7">
+               <svg class="part7" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+               width="50" height="50"
+               viewBox="0 0 172 172"
+               style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3dc3ac"><path d="M79.12,10.32c-7.55187,0 -13.76,6.20813 -13.76,13.76v82.775c-2.56656,-1.15562 -4.39406,-1.97531 -9.19125,-4.085c-7.29656,-3.225 -14.90219,-6.5575 -17.80469,-7.60562c-2.49938,-0.92719 -4.91813,-2.28438 -8.77469,-2.28438c-5.32125,0 -9.46,2.05594 -12.06688,4.82406c-2.59344,2.76812 -3.7625,6.00656 -3.7625,8.93594c0,4.09844 2.43219,8.10281 6.58438,10.69625l52.97062,38.52531c0,0.01344 0.01344,0.01344 0.01344,0.01344c5.38844,3.85656 11.65031,5.805 18.1675,5.805h32.34406c17.01188,0 30.96,-13.94812 30.96,-30.96v-51.6c0,-5.21375 -2.12312,-9.55406 -4.95844,-12.48344c-2.84875,-2.94281 -6.27531,-4.71656 -9.83625,-4.71656c-2.96969,0 -5.41531,0.71219 -7.25625,1.43781c-1.80063,-3.34594 -5.21375,-8.31781 -13.03438,-8.31781c-4.82406,0 -8.08937,2.32469 -10.19906,4.63594c-2.31125,-2.29781 -5.75125,-4.63594 -10.79031,-4.63594c-2.37844,0 -4.11188,0.91375 -5.84531,1.77375v-32.73375c0,-7.55187 -6.20812,-13.76 -13.76,-13.76zM79.12,17.2c3.80281,0 6.88,3.07719 6.88,6.88v39.68094c0,1.53188 0.99438,2.86219 2.44563,3.30563c1.45125,0.43 3.02344,-0.13438 3.85656,-1.3975c1.1825,-1.77375 2.96969,-3.74906 6.42313,-3.74906c5.03906,0 7.99531,5.10625 7.99531,5.10625c0.645,1.15563 1.89469,1.85438 3.225,1.77375c1.33031,-0.09406 2.48594,-0.92719 2.98312,-2.16344c0,0 1.74688,-4.71656 6.78594,-4.71656c5.67063,0 8.46563,7.04125 8.46563,7.04125c0.37625,0.99438 1.1825,1.77375 2.20375,2.09625c1.02125,0.30906 2.12312,0.14781 2.99656,-0.47031c0,0 2.53969,-1.78719 6.62469,-1.78719c0.91375,0 3.15781,0.80625 4.87781,2.59344c1.72,1.80063 3.03687,4.34031 3.03687,7.72656v51.6c0,13.26281 -10.81719,24.08 -24.08,24.08h-32.34406c-5.17344,0 -9.91687,-1.49156 -14.16312,-4.515l-52.95719,-38.51187c-0.08063,-0.05375 -0.16125,-0.12094 -0.24188,-0.17469c-2.58,-1.53187 -3.49375,-3.64156 -3.49375,-4.95844c0,-0.84656 0.55094,-2.78156 1.90813,-4.23281c1.35719,-1.43781 3.39969,-2.64719 7.04125,-2.64719c2.32469,0 3.3325,0.71219 6.35594,1.84094c0.01344,0.01344 0.02687,0.01344 0.05375,0.02688c1.90812,0.68531 10.09156,4.20594 17.38812,7.43094c7.31,3.225 14.00188,6.22156 14.00188,6.22156c1.06156,0.48375 2.29781,0.38969 3.27875,-0.25531c0.98094,-0.63156 1.57219,-1.72 1.57219,-2.88906v-88.05594c0,-3.80281 3.07719,-6.88 6.88,-6.88z"></path></g></g></svg>
+        
+               <h3> EASY TO USE </h3>
+            </div>   
+        </div>
+        
+    
+
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<div class="comments">
+        <img class="leftimg" src="home/jpg.6.png">
+        <img class="rightimg" src="home/jpg.2.png">
+         <span> I loved dealing with the company and its comfort and luxury services, and I advise everyone to deal with the company</span>
+         <h3> - Martina - </h3> 
+</div>
+    <h1 class="head5"> COOPERATE WITH </h1>
+    <div class="imgs2">
+        <img src="Home/express.png">
+        <img src="Home/Discover.png">
+        <img src="Home/jpg.37.png">
+        <img src="Home/jpg.38.png">
+    </div>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<div class="container">
+    <div class="paragraph3">
+        <h1> ABOUT US </h1>
+        <p> We are an Egyptian joint stock company that works in the field of passenger transport.
+            and provide technical solutions using technology to improve passenger transportation services, to develop its services for the public to simplify their lives.</p>
+    </div>
+
+  <div class="paragraph3-info">
+        <h1> NEED HELP </h1>
+        <h3> CONTACT US </h3>
+               
+                <div class="icon8">
+                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                      width="48" height="48"
+                      viewBox="0 0 172 172"
+                      style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M68.23031,14.38232c-2.35876,-0.1716 -4.77567,0.06949 -7.14567,0.76986l-8.48242,2.51253c-9.03879,2.67319 -16.10117,9.84481 -18.49056,18.89648c-5.3054,20.13025 0.76377,43.95734 16.55892,70.77783c15.77294,26.78349 33.74566,43.80574 54.04394,49.36182c9.14103,2.50194 18.99919,0.11194 25.92318,-6.31982l6.4528,-5.98389c7.22044,-6.70399 8.29704,-17.87006 2.46354,-25.8042l-9.32226,-12.66064c-4.99709,-6.78739 -13.80583,-9.67709 -21.90592,-7.24365l-14.58529,4.36719c-0.61223,0.17877 -2.07737,-0.65504 -3.35238,-1.75668l-0.007,-0.007c-2.2709,-1.97464 -5.41726,-5.96577 -8.78337,-11.67383v-0.007c-3.60938,-6.13008 -5.14886,-10.13916 -5.76693,-12.50667c-0.61835,-2.3686 -0.46829,-2.65673 -0.37793,-3.45736c0.04698,-0.39949 0.23679,-0.76965 0.5599,-1.0638l0.007,-0.007l10.87598,-9.94515c6.23103,-5.69624 8.1121,-14.79918 4.59814,-22.45882l-6.55778,-14.30534v-0.007c-3.08742,-6.72986 -9.63149,-10.96321 -16.70589,-11.47786zM67.45345,25.10433c3.2902,0.24583 6.31998,2.21937 7.70556,5.24202l6.56478,14.30534c1.5887,3.46302 0.79202,7.42587 -2.07862,10.05013l-10.87598,9.93815c-2.22958,2.03291 -3.6554,4.80459 -3.99626,7.79655v0.007c-0.08879,0.78679 -0.29863,3.71269 0.65788,7.37663c0.95652,3.66393 2.93135,8.51012 6.90072,15.25016h0.007c3.70368,6.28161 7.20407,11.05383 10.99495,14.34733h0.007c1.2311,1.06578 6.39077,6.01087 13.40951,3.96126l0.02099,-0.007l14.64828,-4.38819c3.80374,-1.14272 7.87087,0.22177 10.15511,3.32438l9.32227,12.66064c2.63986,3.59648 2.17864,8.48534 -1.11979,11.54785l-6.4528,5.99089c-4.1268,3.83508 -10.25496,5.33217 -15.77507,3.82129c-16.40938,-4.4916 -32.64726,-19.03038 -47.61214,-44.44173c-14.98568,-25.44601 -19.67273,-46.49227 -15.43213,-62.58236c1.40177,-5.31032 5.69671,-9.71842 11.14893,-11.33089l8.47542,-2.51253c1.10404,-0.32626 2.22765,-0.43888 3.32438,-0.35693z"></path></g></g></svg>
+                     <p> +201157659421 </p>
+                </div>
+
+
+                <div class="icon9">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                     width="60" height="60"
+                     viewBox="0 0 172 172"
+                     style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M141.42969,34.63112h-110.85937c-7.41787,0.00833 -13.42917,6.01963 -13.4375,13.4375v75.86241c0.00833,7.41787 6.01963,13.42917 13.4375,13.4375h110.85938c7.41787,-0.00833 13.42917,-6.01963 13.4375,-13.4375v-75.86241c-0.00833,-7.41787 -6.01963,-13.42917 -13.4375,-13.4375zM30.57031,41.34987h110.85938c1.78595,-0.00105 3.49838,0.71113 4.75688,1.97834l-57.16615,37.31123c-2.26446,1.48657 -5.20104,1.4643 -7.4427,-0.05644l-55.58859,-37.42478c1.24183,-1.16296 2.87982,-1.80954 4.58118,-1.80835zM148.14844,123.93137c-0.00426,3.7089 -3.00985,6.71449 -6.71875,6.71875h-110.85937c-3.7089,-0.00426 -6.71449,-3.00985 -6.71875,-6.71875v-74.11184l53.9697,36.335c4.48115,3.03686 10.34913,3.0802 14.87464,0.10985l55.45253,-36.19357z"></path></g></g></svg>
+                    <p> superservice@gmail.com </p>
+                </div>   
+
+       <div class="icons10">
+            <img src="https://img.icons8.com/color/46/000000/facebook-new.png"/>
+   
+            <img src="https://img.icons8.com/fluency/46/000000/instagram-new.png"/>
+   
+            <img src="https://img.icons8.com/color/46/000000/twitter--v1.png"/>
+   
+            <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/40/000000/external-telegram-is-a-cloud-based-instant-messaging-and-voice-over-ip-service-logo-shadow-tal-revivo.png"/>
+            
+
+        </div>
+  </div>
+
+
+    <div class="cen">
+        <div class="icon11">
+            <a href="#top"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="50" height="50"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,6.88c-43.65603,0 -79.12,35.46397 -79.12,79.12c0,43.65603 35.46397,79.12 79.12,79.12c43.65603,0 79.12,-35.46397 79.12,-79.12c0,-43.65603 -35.46397,-79.12 -79.12,-79.12zM86,13.76c39.93779,0 72.24,32.30221 72.24,72.24c0,39.93779 -32.30221,72.24 -72.24,72.24c-39.93779,0 -72.24,-32.30221 -72.24,-72.24c0,-39.93779 32.30221,-72.24 72.24,-72.24zM85.94625,37.79297c-1.04969,0.01646 -2.03442,0.5113 -2.67406,1.34375c-0.0045,0.0067 -0.00898,0.01342 -0.01344,0.02015l-34.09094,34.09094c-0.89867,0.86281 -1.26068,2.14404 -0.94641,3.34956c0.31427,1.20552 1.2557,2.14696 2.46122,2.46122c1.20552,0.31427 2.48675,-0.04774 3.34956,-0.94641l28.52781,-28.52781v81.13563c-0.01754,1.24059 0.63425,2.39452 1.7058,3.01993c1.07155,0.62541 2.39684,0.62541 3.46839,0c1.07155,-0.62541 1.72335,-1.77935 1.7058,-3.01993v-81.13563l28.52781,28.52781c0.86281,0.89867 2.14404,1.26068 3.34956,0.94641c1.20552,-0.31427 2.14696,-1.2557 2.46122,-2.46122c0.31427,-1.20552 -0.04774,-2.48675 -0.94641,-3.34956l-34.11109,-34.1111c-0.66124,-0.86049 -1.68973,-1.35855 -2.77485,-1.34375z"></path></g></g></svg>
+            </a>
+        </div>
+
+        <div class="icon12-p">
+            <svg class="circle" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="30" height="30"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,6.88c-43.65603,0 -79.12,35.46397 -79.12,79.12c0,43.65603 35.46397,79.12 79.12,79.12c43.65603,0 79.12,-35.46397 79.12,-79.12c0,-43.65603 -35.46397,-79.12 -79.12,-79.12zM86,13.76c39.93779,0 72.24,32.30221 72.24,72.24c0,39.93779 -32.30221,72.24 -72.24,72.24c-39.93779,0 -72.24,-32.30221 -72.24,-72.24c0,-39.93779 32.30221,-72.24 72.24,-72.24zM87.12203,53.32c-16.95576,0 -27.50656,12.54175 -27.50656,32.70015c0,20.11368 10.5944,32.65985 27.5536,32.65985c13.2784,0 23.14443,-7.39401 25.22219,-18.85953h-7.9214c-1.99176,7.224 -8.6079,11.67719 -17.30078,11.67719c-12.02624,0 -19.55156,-9.81862 -19.55156,-25.4775c0,-15.65888 7.52301,-25.51781 19.50453,-25.51781c8.60688,0 15.27005,5.0554 17.34781,13.10156h7.91469c-1.8576,-12.0228 -12.11138,-20.2839 -25.2625,-20.2839z"></path></g></g></svg>
+
+            <p> All right reserve | ModernSuperjetService 2022</p>
+        </div>
+
+            
+    </div>
+
+
+    <script src="main.js"></script>
+    </body>
+
+</html>

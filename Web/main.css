@@ -1,0 +1,843 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS';
+}
+
+body {
+    overflow-x: hidden;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+::selection
+{
+    color: white;
+    background-color: #3DC3AC;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.nav {
+    justify-content: center;
+    text-align: center;
+    height: 80px;
+    position: relative;
+    top: 50px;
+}
+
+#logo
+{
+    position: absolute;
+    left:-50px;
+    top:8px;
+    width:150px;
+}
+
+.icon
+{
+    color: white ;
+    font-size:35px;
+    position: relative;
+    top: -60px;
+    right: -450px;
+    margin: 10px;
+} 
+
+.nav .nav-img img {
+    width: 100%;
+    
+}
+
+.nav-links li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.nav-links li a {
+    margin-top: 5px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    transition: 0.5s ease;
+}
+
+.line
+{
+    width: 0%;
+    height:3px;
+    background-color: #FBBB0D;
+    transition: 0.5s ease;
+}
+.active .line
+{
+    width:50%;
+    height:3px;
+    background-color: #FBBB0D;
+}
+li a:hover :not(.active) 
+{
+    width:50%;
+}
+
+.img-bg
+{
+    background-image: linear-gradient(to bottom, #3DC3AC, #3dc3ad00 ),  url('Home/jpg.1.png');
+    background-repeat: no-repeat;
+    background-size: cover ;
+    height: 550px;
+    position:relative;
+    top: -50px;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.header-up
+{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 2px;   
+    color: white; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header-down
+{
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 2px;   
+    color: white;
+    font-size: 37px;
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+}
+.txt-header
+{
+    position: relative;
+    top: 100px;
+    left: 150px;
+}
+hr
+{
+    width: 37%;
+    height: 5px;
+    margin: 14px 0px;
+    background-color: #FFF; 
+    color: #FFF; 
+    display: inline-block;
+}
+ /*---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+ .select
+ {
+     width:1100px;
+     height: 220px;
+     margin: auto;
+     padding: 20px;
+     background-color: white;
+     box-shadow: 0 3px 10px #999999;
+     position: relative;
+     bottom: 170px;
+ }
+ .top-select
+ {
+     float: left;
+     clear: both;
+ }
+ .title1
+ {
+     color: #707070;
+     text-transform: uppercase;
+     font-size: 30px;
+     margin: 1px 25px;
+     letter-spacing: 3px;
+ }
+ .title2
+ {
+     color: #707070b0;
+     font-size: 20px;
+     margin: 0 25px;
+     text-transform: capitalize;
+     font-weight: bold;
+     letter-spacing: 2px;
+ }
+ .button-box {
+     width: 280px;
+     height: 60px;
+     position: relative;
+     background: #e6eaee;
+     float:right;
+ }
+ .space
+ {
+     color: #9e9e9e;
+     font-size: 20px;
+     position: relative;
+     left: -10px;
+     bottom: 5px;
+ }
+
+ #toggle-btn1 {
+     padding: 10px 25px;
+     margin-top: 5px;
+     cursor: pointer ;
+     background:transparent ;
+     border: 0;
+     outline: none;
+     position: relative;
+     color: white;
+     font-size: 25px;
+     letter-spacing: -1px;
+ }
+ #toggle-btn2 {
+ 
+     cursor: pointer;
+     background: transparent;
+     border: 0;
+     outline: none;
+     position: relative;
+     color: #707070;
+     font-size: 24px;
+     letter-spacing: -1px;
+ }
+ #btn {
+     left: 4px;
+     top: 0;
+     position: absolute;
+     width: 120px;
+     height: 80%;
+     background: #FBBB0D;
+     margin: 6px;
+     transition: 0.5s;
+     
+ }
+ #disable
+ {
+    cursor: not-allowed;
+ }
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.selectbtn
+{
+    background-color: #FBBB0D;
+    border: none;
+    width: 60px;
+    height: 45px;
+    cursor: pointer;
+    background-image: url("Home/icons8-right-50.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.selectbtn:hover
+{
+    background-color: #faab00;
+    box-shadow: 0 3px 10px #999999;
+}
+
+  .icons, label
+  {
+      color: #9e9e9e;
+      font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+      font-size: 25px;
+      
+    } 
+ .group
+    {
+        display: inline-block;
+        margin-top: 40px;
+
+    }
+
+ .inlineselect {
+    display : inline-block;
+    margin-top: 10px;
+}
+ /*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+ .head1 h1 { text-align: center;
+    font-family: 'Britannic' ;
+    font-size: 80px;  
+    color: #ccc;
+    position: relative;
+    bottom: 130px;
+ }
+
+ .head2 h3 { text-align: center;
+    font-style: italic;
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 35px;
+    letter-spacing: 2px;   
+    color: #231F20b9;
+    position: relative;
+    bottom: 170px;
+ }
+
+ /*---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+ 
+ .imgs { position: relative;
+     top: -150px;
+ }
+ .img-home1 img { width: 50%;
+    padding: 8px;
+
+ }
+
+
+ .img-home1 { 
+      width: 70%;
+     display: flex;
+     margin: auto;
+    
+    
+
+ }
+
+ .img-home2 img {  width: 33.333%;
+    padding: 8px;
+    
+ }
+
+ .img-home2 {  width: 70%;
+    display: flex;
+    margin: auto ;
+ 
+   
+
+
+ }
+
+ /*----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+ .button-box1 { text-align: center;
+    position: relative;
+    top: -65px;
+
+ }
+ 
+ .btn1 {
+    border: none;
+    color: #231F20;
+    background-color: #F2F6FA;
+    padding: 10px 20px ;
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 30px;
+    font-style: normal;
+    letter-spacing: 1px; 
+    
+}
+.btn1 a
+{
+    text-decoration: none;
+    color: #231F20;
+}
+.btn1:hover
+{
+    background-color: #f2f6fabb;
+    box-shadow: 0 3px 10px #999999;
+
+}
+
+
+.btn2 {
+    border: none;
+    color: #fff;
+    background-color: #FBBB0D;
+    padding: 10px 20px ;
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 30px;
+    font-style: normal;
+    letter-spacing: 1px; 
+}
+.btn2 a
+{
+    text-decoration: none;
+    color: #fff;
+
+}
+.btn2:hover
+{
+    background-color: #faab00;
+    box-shadow: 0 3px 10px #999999;
+}
+/*---------------------------------------------------*/
+.read
+{
+    font-size: 25px;
+    color: #231F20;
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 60px;
+}
+#readbox
+{
+    position: relative;
+    top: -80px;    
+    display: none;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.img-bg1 {  position: relative;
+    background-image: linear-gradient(to top, rgb(26,26,26), rgba(0,0,0,0) ),  url('Home/jpg.11..jpg');
+    background-repeat: no-repeat;
+    height: 434px ;
+    width: 1600px;
+    color: #fff;
+}
+
+.paragraph1 {   color: #faf6f2;
+    position: absolute;
+    top: 100px;
+    padding-left: 100px;
+    width: 1280px;
+
+}
+
+.paragraph1 h2 { font-style: italic;
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 54px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.paragraph1 p {  
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size:  44px;
+    font-weight: 100;
+
+}
+
+.btn3 {
+    border: none;
+    color: #fff;
+    height: 60px;
+    background-color: #FBBB0D;
+    padding: 10px 20px ;
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 30px;
+    font-style: normal;
+    letter-spacing: 1px; 
+    float: right;
+    clear: both;
+    cursor: pointer;
+
+}
+.btn3:hover
+{
+    background-color: #faab00;
+    box-shadow: 0 3px 10px #999999;
+}
+.btn3 a
+{
+    text-decoration: none;
+    color: #fff;
+
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.head3 h1 { text-align: center;
+    font-family: 'Britannic' ;
+    font-size: 80px;  
+    color: #ccc;
+    position: relative;
+    
+ }
+
+ .head4 h3 { text-align: center;
+    font-style: italic;
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 35px;
+    letter-spacing: 2px;   
+    color: #231f20b9;
+    position: relative;
+    top: -40px;
+   
+ }
+ /*---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+ .img-bg2  { 
+    
+    background-image: url("home/jpg.4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1500px;
+    position: relative;
+    top: -280px;
+}
+.icon1 {  font-style: italic;
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    position: relative;
+    margin-left: 50px;
+    top: 18%;
+ }
+
+ .part1 { 
+  
+     width: 150px;
+ }
+
+ .icon2 {  font-style: italic;
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    position: relative;
+    margin-left: 40px;
+    top: 29%;
+   
+
+}
+
+.part2 {
+    width: 110px;
+}
+
+.icon3 {  font-style: italic;
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    position: relative;
+    margin-left: 37px;
+    top: 49%;
+
+}
+
+.part3 {
+    width: 150px;
+}
+
+.icon4 {  font-style: italic;
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    position: relative;
+    margin-left: 450px;
+    top: 65%;
+
+}
+
+.part4 {
+    width: 150px;
+}
+
+.icon5 {  font-style: italic;
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    position: relative;
+    margin-left: 1100px;
+    top: 49%;
+
+}
+
+.part5 {
+    width: 150px;
+}
+
+.icon6 {  font-style: italic;
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    position: relative;
+    margin-left: 1150px;
+    top: 18%;
+
+}
+
+.part6 {
+    width: 150px;
+}
+
+.icon7 {  font-style: italic;
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    position: relative;
+    margin-left: 1150px;
+    top: -20%;
+}
+
+.part7 { 
+    width: 150px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.comments {
+    background-color: #F2F6FA;
+    width: 100%;
+    margin-top: -400px;
+    
+}
+.leftimg
+{
+    width: 50%;
+}
+.rightimg
+{
+    width: 12%;
+    position: relative;
+    left: 20%;
+    bottom: 350px;
+    margin-bottom: 20px;
+}
+
+
+.comments span {  
+    text-align: center;
+    position: relative;
+    float: right;
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 40px;
+    color: #707070;
+    font-weight: 500;
+    top: -300px;
+    right: 70px ;
+    width: 40%;
+
+}
+
+.comments h3 { text-align: center;
+    float: right;
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 40px;
+    color: #3DC3AC;
+    position: relative;
+    bottom: 70px;
+    left: 21%;
+}
+
+.head5 {  
+    font-family: 'Britannic';
+    font-size: 70px;  
+    letter-spacing: 1px; 
+    color: #ccc;
+    position: relative;
+    top: 30px;
+    left: 28%;
+}
+
+.imgs2 { width: 90%;
+    display: flex;
+    margin: auto;
+    padding-bottom: 60px;
+   
+}
+
+.imgs2 img {
+    width: 25%;
+    padding: 10px 15px;
+    margin-left: 10px;    
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.container { background-image: linear-gradient(to bottom, #3DC3AC,  #000);
+    color: rgb(255, 255, 255);
+}
+.paragraph3
+{
+    float: left;
+    width: 70%;
+    padding: 60px;
+    font-style: 'light';
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 60px;
+    letter-spacing: 1px;
+}
+.paragraph3-info
+{
+    float: right;
+    width: 30%;
+    position: relative;
+    right: 140px;
+    padding: 60px;
+    font-style: 'light';
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 60px;
+    letter-spacing: 1px;
+}
+.paragraph3 h1 {  font-style: 'light';
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 60px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.paragraph3 p {
+    font-style: 'regular';
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 30px;
+    font-weight: 400;
+    width: 44%;
+    padding-top: 40px;
+    
+}
+
+
+.paragraph3-info h1 {  font-style: 'light';
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 60px;
+    font-weight: 100;
+    letter-spacing: 1px;
+
+}
+
+.paragraph3-info h3 {  font-style: 'regular';
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 40px;
+
+}
+.icon8 {
+    padding-top: 40px;
+    display: flex;
+}
+
+.icon8 p {  font-style: 'regular';
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+
+.icon8 {
+    padding-top: 40px;
+    display: flex;
+}
+.icon9 p {  font-style: 'regular';
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-top: 10px;
+    
+}
+.icon9
+{
+    display: flex;
+    
+}
+.icons10 {  margin-left: 80px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.icon11 {  
+    margin-left: 25%;
+width: 50px;
+}
+.icon11:hover
+{
+    position: relative;
+    top: -15px;
+}
+.cen
+{
+    text-align: center;
+    margin-left: 25%;
+    padding-bottom: 10px;
+}
+.icon12-p { color: #ffffff;
+    font-style: 'regular';
+    font-family: 'Calibri','Gill Sans', 'Gill Sans MT';
+    font-size: 25px;
+    letter-spacing: 3px;
+    display: flex;
+}
+
+
+/*select style*/
+.custom-select {
+    border: 1px solid #ccc;
+    overflow: hidden;
+    background-color: #fff;
+    background: #fff;
+    position: relative;
+    margin-top: 5px;
+    width: 240px;
+}
+ select {
+    padding: 5px 8px;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.custom-select:after {
+    top: 50%;
+    left: 90%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(0, 0, 0, 0);
+    border-top-color: #000000;
+    border-width: 5px;
+    margin-top: -2px;
+    z-index: 100;
+}
+ select:focus {
+    outline: none;
+}
+
+.date
+{
+    padding: 5px 8px;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.custom-date
+{
+    border: 1px solid #ccc;
+    overflow: hidden;
+    background-color: #fff;
+    background: #fff;
+    position: relative;
+    margin-top: 5px;
+    width: 240px;
+}
+input[type="date"] {
+    outline: none;
+}
+
+
+
+
+
+
+ 
+
+
+
